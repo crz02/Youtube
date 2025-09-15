@@ -9,9 +9,11 @@ body{
     margin: 0;
     padding-top: 80px;
     padding-left: 96px;
-    padding-right: 24px;
+    padding-right: 20px;
     background-color: rgb(248, 248, 248);
+    z-index: 10000;
 }
+
 
 @media (min-width:1200.1px){
     body{
@@ -19,7 +21,7 @@ body{
     font-family: Roboto , Arial;
     margin: 0;
     padding-top: 80px;
-    padding-left: 175px;
+    padding-left: 225px;
     padding-right: 24px;
     padding-bottom: 80px;
     background-color: rgb(248, 248, 248);

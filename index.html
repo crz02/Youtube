@@ -15,12 +15,45 @@
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/footer.css">
+        <style>
+            .preload-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+                transition: opacity 0.5s;
+            }
+            .preload-spinner {
+                border: 8px solid #f3f3f3;
+                border-top: 8px solid #ff0000;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                animation: spin 1s linear infinite;
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
 </head>
 
 <body>
+
+    <div class="preload-overlay" id="preload">
+        <div class="preload-spinner"></div>
+    </div>
     <header class="header">
         <div class="left-section">
-            <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+            <div class="">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+            </div>
             <a href="https://www.youtube.com">
                 <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
             </a>
@@ -436,6 +469,15 @@
             Made By Sk Irfan Ahmed &#128187;
         </div>
     </footer>
+        <script>
+            window.addEventListener('load', function() {
+                var preload = document.getElementById('preload');
+                preload.style.opacity = '0';
+                setTimeout(function() {
+                    preload.style.display = 'none';
+                }, 500);
+            });
+        </script>
 </body>
 
 </html>
