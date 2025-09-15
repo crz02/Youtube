@@ -172,3 +172,53 @@
     border-radius: 18px;
     margin-right: 20px;
 }
+
+@media (max-width: 750px){
+    .header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+.middle-section {
+    flex:0.8;
+    margin: 1px;
+    padding: 0;
+    max-width: 50px;
+    display: flex;
+    align-items: center;
+}
+.right-section {
+    width: 0;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.search-bar{
+    display: none;
+}
+.search-voice-button{
+    display: none;
+}
+.search-button{
+    border: none;
+    border-radius: 50px;
+    border-style:none;
+    color: white;
+}
+}
