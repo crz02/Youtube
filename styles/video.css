@@ -48,6 +48,28 @@
 @media (max-width: 600px) {
     .video-grid {
         grid-template-columns: 1fr ;
+        gap: 10px;
+    }
+    .channel-picture {
+    width: 36px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-top: 10px;
+    }
+    .video-info{
+        margin-top: 10px;
+    }
+    .video-title{
+        font-size: 17px;
+    }
+    .video-author{
+        font-size: 16px;
+    }
+    .video-stats{
+        font-size: 14px;
     }
 }
 

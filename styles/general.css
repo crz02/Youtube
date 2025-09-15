@@ -1,6 +1,7 @@
 @media (max-width:500px) {
     body {
-        padding-left: 24px !important;
+        padding-left: 0.3px !important;
+        padding-right: 0 !important;
         background-color: white !important;
     }
 }
