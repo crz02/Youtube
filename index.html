@@ -43,7 +43,51 @@
         }
 
         /* Dark mode styles using system preference */
-    @media (prefers-color-scheme: dark) {
+        @media (prefers-color-scheme: dark) {
+        /* Light mode: use dark SVG icons */
+        @media (prefers-color-scheme: light) {
+            /* Header icons */
+            .hamburger-menu {
+                content: url('icons/Dark-Icon/dark-hamburger-menu.svg');
+            }
+            .youtube-logo {
+                content: url('icons/Dark-Icon/dark-youtube-logo.svg');
+            }
+            .search-icon {
+                content: url('icons/Dark-Icon/dark-search.svg');
+            }
+            .voice-search-icon {
+                content: url('icons/Dark-Icon/dark-voice-search-icon.svg');
+            }
+            .upload-icon {
+                content: url('icons/Dark-Icon/dark-upload.svg');
+            }
+            .youtube-apps-icon {
+                content: url('icons/Dark-Icon/dark-youtube-apps.svg');
+            }
+            .notifications-icon {
+                content: url('icons/Dark-Icon/dark-notifications.svg');
+            }
+            /* Sidebar icons */
+            .sidebar-link img[alt="Home"] {
+                content: url('icons/Dark-Icon/dark-home.svg');
+            }
+            .sidebar-link img[alt="Explore"] {
+                content: url('icons/Dark-Icon/dark-explore.svg');
+            }
+            .sidebar-link img[alt="Subscriptions"] {
+                content: url('icons/Dark-Icon/dark-subscriptions.svg');
+            }
+            .sidebar-link img[alt="Originals"] {
+                content: url('icons/Dark-Icon/dark-originals.svg');
+            }
+            .sidebar-link img[alt="Youtube music"] {
+                content: url('icons/Dark-Icon/dark-youtube-music.svg');
+            }
+            .sidebar-link img[alt="Library"] {
+                content: url('icons/Dark-Icon/dark-library.svg');
+            }
+        }
             body {
                 background-color: #000000 !important;
                 color: #e0e0e0 !important;
@@ -80,35 +124,35 @@
     <header class="header">
         <div class="left-section">
             <div class="">
-                <img class="hamburger-menu" src="icons/Dark-Icon/dark-hamburger-menu.svg" alt="">
+                <img class="hamburger-menu" src="icons/Light-Icon/light-hamburgermenu.svg" alt="">
             </div>
             <a href="https://www.youtube.com">
-                <img class="youtube-logo" src="icons/Dark-Icon/dark-youtube-logo.svg" alt="">
+                <img class="youtube-logo" src="icons/Light-Icon/light-youtube.png" alt="">
             </a>
         </div>
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
-                <img class="search-icon" src="icons/Dark-Icon/dark-search.svg" alt="">
+                <img class="search-icon" src="icons/Light-Icon/light-search-menu.png" alt="">
                 <div class="tooltip">Search</div>
             </button>
             <!--Put position absolute inside a position relative-->
             <button class="search-voice-button">
-                <img class="voice-search-icon" src="icons/Dark-icon/dark-voice-search-icon.svg" alt="">
+                <img class="voice-search-icon" src="icons/Light-Icon/light-voice-search-icon.png" alt="">
                 <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
             <div class="upload-icon-container">
-                <img class="upload-icon" src="icons/Dark-Icon/dark-upload.svg" alt="">
+                <img class="upload-icon" src="icons/Light-Icon/light-upload.png" alt="">
                 <div class="tooltip">Create</div>
             </div>
             <div class="youtube-apps-container">
-                <img class="youtube-apps-icon" src="icons/Dark-Icon/dark-youtube-apps.svg" alt="">
+                <img class="youtube-apps-icon" src="icons/Light-Icon/light-youtube-apps.png" alt="">
                 <div class="tooltip">Youtube Apps</div>
             </div>
             <div class="notifications-icon-container">
-                <img class="notifications-icon" src="icons/Dark-Icon/dark-notifications.svg" alt="">
+                <img class="notifications-icon" src="icons/Light-Icon/light-notification.png" alt="">
                 <div class="notifications-count">3</div>
                 <div class="tooltip">Notifications</div>
             </div>
@@ -117,27 +161,27 @@
     </header>
     <nav class="sidebar">
         <div class="sidebar-link">
-            <img src="icons/Dark-Icon/dark-home.svg" alt="">
+            <img src="icons/Light-Icon/light-home.png" alt="">
             <div>Home</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/Dark-Icon/dark-explore.svg" alt="">
+            <img src="icons/Light-Icon/light-explore.png" alt="">
             <div>Explore</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/Dark-Icon/dark-subscriptions.svg" alt="">
+            <img src="icons/Light-Icon/light-subscprition.png" alt="">
             <div>Subscriptions</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/Dark-Icon/dark-originals.svg" alt="">
+            <img src="icons/Light-Icon/light-originals.png" alt="">
             <div>Originals</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/Dark-Icon/dark-youtube-music.svg" alt="">
+            <img src="icons/Light-Icon/light-youtube-music.png" alt="">
             <div>Youtube music</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/Dark-Icon/dark-library.svg" alt="">
+            <img src="icons/Light-Icon/light-Library.png" alt="">
             <div>Library</div>
         </div>
     </nav>
