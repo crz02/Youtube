@@ -43,22 +43,26 @@
         }
 
         /* Dark mode styles using system preference */
-        @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark) {
             body {
-                background-color: #181818 !important;
+                background-color: #000000 !important;
                 color: #e0e0e0 !important;
             }
-            .header, .sidebar, .end, .video-preview, .video-info, .sidebar-link {
-                background-color: #212121 !important;
+            .header, .sidebar, .end, .video-preview, .video-info, .sidebar-link,
+            main, .main-content, .video-grid, section, .profilepicture {
+                background-color: #000000 !important;
                 color: #e0e0e0 !important;
+            }
+            .header {
+                border-bottom-color: #000000 !important;
             }
             .preload-overlay {
-                background: #181818 !important;
+                background: #000000 !important;
             }
             .search-bar, .search-button, .search-voice-button {
-                background-color: #232323 !important;
+                background-color: #000000 !important;
                 color: #e0e0e0 !important;
-                border-color: #444 !important;
+                border-color: #000000 !important;
             }
             .tooltip {
                 background-color: #333 !important;
@@ -76,35 +80,35 @@
     <header class="header">
         <div class="left-section">
             <div class="">
-                <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+                <img class="hamburger-menu" src="icons/Dark-Icon/dark-hamburger-menu.svg" alt="">
             </div>
             <a href="https://www.youtube.com">
-                <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+                <img class="youtube-logo" src="icons/Dark-Icon/dark-youtube-logo.svg" alt="">
             </a>
         </div>
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
-                <img class="search-icon" src="icons/search.svg" alt="">
+                <img class="search-icon" src="icons/Dark-Icon/dark-search.svg" alt="">
                 <div class="tooltip">Search</div>
             </button>
             <!--Put position absolute inside a position relative-->
             <button class="search-voice-button">
-                <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+                <img class="voice-search-icon" src="icons/Dark-icon/dark-voice-search-icon.svg" alt="">
                 <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
             <div class="upload-icon-container">
-                <img class="upload-icon" src="icons/upload.svg" alt="">
+                <img class="upload-icon" src="icons/Dark-Icon/dark-upload.svg" alt="">
                 <div class="tooltip">Create</div>
             </div>
             <div class="youtube-apps-container">
-                <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+                <img class="youtube-apps-icon" src="icons/Dark-Icon/dark-youtube-apps.svg" alt="">
                 <div class="tooltip">Youtube Apps</div>
             </div>
             <div class="notifications-icon-container">
-                <img class="notifications-icon" src="icons/notifications.svg" alt="">
+                <img class="notifications-icon" src="icons/Dark-Icon/dark-notifications.svg" alt="">
                 <div class="notifications-count">3</div>
                 <div class="tooltip">Notifications</div>
             </div>
@@ -113,27 +117,27 @@
     </header>
     <nav class="sidebar">
         <div class="sidebar-link">
-            <img src="icons/home.svg" alt="">
+            <img src="icons/Dark-Icon/dark-home.svg" alt="">
             <div>Home</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/explore.svg" alt="">
+            <img src="icons/Dark-Icon/dark-explore.svg" alt="">
             <div>Explore</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/subscriptions.svg" alt="">
+            <img src="icons/Dark-Icon/dark-subscriptions.svg" alt="">
             <div>Subscriptions</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/originals.svg" alt="">
+            <img src="icons/Dark-Icon/dark-originals.svg" alt="">
             <div>Originals</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/youtube-music.svg" alt="">
+            <img src="icons/Dark-Icon/dark-youtube-music.svg" alt="">
             <div>Youtube music</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/library.svg" alt="">
+            <img src="icons/Dark-Icon/dark-library.svg" alt="">
             <div>Library</div>
         </div>
     </nav>
