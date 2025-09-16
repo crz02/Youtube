@@ -43,7 +43,51 @@
         }
 
         /* Dark mode styles using system preference */
-    @media (prefers-color-scheme: dark) {
+        @media (prefers-color-scheme: dark) {
+        /* Light mode: use dark SVG icons */
+        @media (prefers-color-scheme: light) {
+            /* Header icons */
+            .hamburger-menu {
+                content: url('icons/Dark-Icon/dark-hamburger-menu.svg');
+            }
+            .youtube-logo {
+                content: url('icons/Dark-Icon/dark-youtube-logo.svg');
+            }
+            .search-icon {
+                content: url('icons/Dark-Icon/dark-search.svg');
+            }
+            .voice-search-icon {
+                content: url('icons/Dark-Icon/dark-voice-search-icon.svg');
+            }
+            .upload-icon {
+                content: url('icons/Dark-Icon/dark-upload.svg');
+            }
+            .youtube-apps-icon {
+                content: url('icons/Dark-Icon/dark-youtube-apps.svg');
+            }
+            .notifications-icon {
+                content: url('icons/Dark-Icon/dark-notifications.svg');
+            }
+            /* Sidebar icons */
+            .sidebar-link img[alt="Home"] {
+                content: url('icons/Dark-Icon/dark-home.svg');
+            }
+            .sidebar-link img[alt="Explore"] {
+                content: url('icons/Dark-Icon/dark-explore.svg');
+            }
+            .sidebar-link img[alt="Subscriptions"] {
+                content: url('icons/Dark-Icon/dark-subscriptions.svg');
+            }
+            .sidebar-link img[alt="Originals"] {
+                content: url('icons/Dark-Icon/dark-originals.svg');
+            }
+            .sidebar-link img[alt="Youtube music"] {
+                content: url('icons/Dark-Icon/dark-youtube-music.svg');
+            }
+            .sidebar-link img[alt="Library"] {
+                content: url('icons/Dark-Icon/dark-library.svg');
+            }
+        }
             body {
                 background-color: #000000 !important;
                 color: #e0e0e0 !important;
@@ -137,7 +181,7 @@
             <div>Youtube music</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/Light-Icon/dark-library.svg" alt="">
+            <img src="icons/Light-Icon/light-Library.png" alt="">
             <div>Library</div>
         </div>
     </nav>
