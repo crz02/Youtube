@@ -173,59 +173,41 @@
     margin-right: 20px;
 }
 
-@media (max-width: 750px){
-    .header {
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: white;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(228, 228, 228);
-}
+@media (max-width: 750px) {
+    .search-bar {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        display: hidden;
+        border: none;
+        box-shadow: none;
+        width: 0;
+    }
 
-.left-section {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-.left-section div{
-    display: none;
-}
-.middle-section {
-    flex:0.8;
-    margin: 1px;
-    padding: 0;
-    max-width: 50px;
-    display: flex;
-    align-items: center;
-}
-.right-section {
-    width: 0;
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0;
-}
-.search-bar{
-    display: none;
-}
-.search-voice-button{
-    display: none;
-}
-.search-button{
-    border: none;
-    border-radius: 50px;
-    border-style:none;
-    color: white;
-}
-.youtube-logo{
-    height: 28px;
-}
+    .search-bar::placeholder {
+        font-size: 0;
+        padding: 0;
+        display: hidden;
+    }
+
+    .search-button {
+        width: 45px;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .right-section {
+        width: px;
+        margin-right: 0;
+    }
+
+    .current-user-icon {
+        height: 30px;
+        width: 8px;
+        margin-right: 0;
+    }
+    .middle-section{
+        margin-left: 215px;
+        margin-right: 0;
+    }
 }

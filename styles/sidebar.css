@@ -1,14 +1,3 @@
-@media (max-width:500px) {
-        .sidebar {
-            display: none;
-        }
-            .main-content {
-                margin-left: 0 !important;
-                width: 100% !important;
-                padding-left: 0 !important;
-            }
-}
-
 @media (max-width:1200px) {
     .sidebar-link img {
         height: 24px;
