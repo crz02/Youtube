@@ -1,5 +1,5 @@
 <html lang="en">
-
+        
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,33 +15,57 @@
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/footer.css">
-        <style>
+    <style>
+        .preload-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s;
+        }
+        .preload-spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #ff0000;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Dark mode styles using system preference */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #181818 !important;
+                color: #e0e0e0 !important;
+            }
+            .header, .sidebar, .end, .video-preview, .video-info, .sidebar-link {
+                background-color: #212121 !important;
+                color: #e0e0e0 !important;
+            }
             .preload-overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                background: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 9999;
-                transition: opacity 0.5s;
+                background: #181818 !important;
             }
-            .preload-spinner {
-                border: 8px solid #f3f3f3;
-                border-top: 8px solid #ff0000;
-                border-radius: 50%;
-                width: 60px;
-                height: 60px;
-                animation: spin 1s linear infinite;
+            .search-bar, .search-button, .search-voice-button {
+                background-color: #232323 !important;
+                color: #e0e0e0 !important;
+                border-color: #444 !important;
             }
-            @keyframes spin {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
+            .tooltip {
+                background-color: #333 !important;
+                color: #e0e0e0 !important;
             }
-        </style>
+        }
+    </style>
 </head>
 
 <body>

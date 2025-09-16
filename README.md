@@ -43,11 +43,6 @@ Youtube/
 
 ---
 
-## 📷 Screenshots
-
-Include screenshots of your project to show off the design and layout.
-
----
 
 ## 🛠️ How to Use
 
