@@ -1,5 +1,5 @@
 <html lang="en">
-        
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/video.css">
@@ -29,6 +28,7 @@
             z-index: 9999;
             transition: opacity 0.5s;
         }
+
         .preload-spinner {
             border: 8px solid #f3f3f3;
             border-top: 8px solid #ff0000;
@@ -37,77 +37,113 @@
             height: 60px;
             animation: spin 1s linear infinite;
         }
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         /* Dark mode styles using system preference */
         @media (prefers-color-scheme: dark) {
-        /* Light mode: use dark SVG icons */
-        @media (prefers-color-scheme: light) {
-            /* Header icons */
-            .hamburger-menu {
-                content: url('icons/Dark-Icon/dark-hamburger-menu.svg');
+            /* Light mode: use dark SVG icons */
+            @media (prefers-color-scheme: light) {
+
+                /* Header icons */
+                .hamburger-menu {
+                    content: url('icons/Dark-Icon/dark-hamburger-menu.svg');
+                }
+
+                .youtube-logo {
+                    content: url('icons/Dark-Icon/dark-youtube-logo.svg');
+                }
+
+                .search-icon {
+                    content: url('icons/Dark-Icon/dark-search.svg');
+                }
+
+                .voice-search-icon {
+                    content: url('icons/Dark-Icon/dark-voice-search-icon.svg');
+                }
+
+                .upload-icon {
+                    content: url('icons/Dark-Icon/dark-upload.svg');
+                }
+
+                .youtube-apps-icon {
+                    content: url('icons/Dark-Icon/dark-youtube-apps.svg');
+                }
+
+                .notifications-icon {
+                    content: url('icons/Dark-Icon/dark-notifications.svg');
+                }
+
+                /* Sidebar icons */
+                .sidebar-link img[alt="Home"] {
+                    content: url('icons/Dark-Icon/dark-home.svg');
+                }
+
+                .sidebar-link img[alt="Explore"] {
+                    content: url('icons/Dark-Icon/dark-explore.svg');
+                }
+
+                .sidebar-link img[alt="Subscriptions"] {
+                    content: url('icons/Dark-Icon/dark-subscriptions.svg');
+                }
+
+                .sidebar-link img[alt="Originals"] {
+                    content: url('icons/Dark-Icon/dark-originals.svg');
+                }
+
+                .sidebar-link img[alt="Youtube music"] {
+                    content: url('icons/Dark-Icon/dark-youtube-music.svg');
+                }
+
+                .sidebar-link img[alt="Library"] {
+                    content: url('icons/Dark-Icon/dark-library.svg');
+                }
             }
-            .youtube-logo {
-                content: url('icons/Dark-Icon/dark-youtube-logo.svg');
-            }
-            .search-icon {
-                content: url('icons/Dark-Icon/dark-search.svg');
-            }
-            .voice-search-icon {
-                content: url('icons/Dark-Icon/dark-voice-search-icon.svg');
-            }
-            .upload-icon {
-                content: url('icons/Dark-Icon/dark-upload.svg');
-            }
-            .youtube-apps-icon {
-                content: url('icons/Dark-Icon/dark-youtube-apps.svg');
-            }
-            .notifications-icon {
-                content: url('icons/Dark-Icon/dark-notifications.svg');
-            }
-            /* Sidebar icons */
-            .sidebar-link img[alt="Home"] {
-                content: url('icons/Dark-Icon/dark-home.svg');
-            }
-            .sidebar-link img[alt="Explore"] {
-                content: url('icons/Dark-Icon/dark-explore.svg');
-            }
-            .sidebar-link img[alt="Subscriptions"] {
-                content: url('icons/Dark-Icon/dark-subscriptions.svg');
-            }
-            .sidebar-link img[alt="Originals"] {
-                content: url('icons/Dark-Icon/dark-originals.svg');
-            }
-            .sidebar-link img[alt="Youtube music"] {
-                content: url('icons/Dark-Icon/dark-youtube-music.svg');
-            }
-            .sidebar-link img[alt="Library"] {
-                content: url('icons/Dark-Icon/dark-library.svg');
-            }
-        }
+
             body {
                 background-color: #000000 !important;
                 color: #e0e0e0 !important;
             }
-            .header, .sidebar, .end, .video-preview, .video-info, .sidebar-link,
-            main, .main-content, .video-grid, section, .profilepicture {
+
+            .header,
+            .sidebar,
+            .end,
+            .video-preview,
+            .video-info,
+            .sidebar-link,
+            main,
+            .main-content,
+            .video-grid,
+            section,
+            .profilepicture {
                 background-color: #000000 !important;
                 color: #e0e0e0 !important;
             }
+
             .header {
                 border-bottom-color: #000000 !important;
             }
+
             .preload-overlay {
                 background: #000000 !important;
             }
-            .search-bar, .search-button, .search-voice-button {
+
+            .search-bar,
+            .search-button,
+            .search-voice-button {
                 background-color: #000000 !important;
                 color: #e0e0e0 !important;
                 border-color: #000000 !important;
             }
+
             .tooltip {
                 background-color: #333 !important;
                 color: #e0e0e0 !important;
@@ -541,15 +577,15 @@
             Made By Sk Irfan Ahmed &#128187;
         </div>
     </footer>
-        <script>
-            window.addEventListener('load', function() {
-                var preload = document.getElementById('preload');
-                preload.style.opacity = '0';
-                setTimeout(function() {
-                    preload.style.display = 'none';
-                }, 500);
-            });
-        </script>
+    <script>
+        window.addEventListener('load', function () {
+            var preload = document.getElementById('preload');
+            preload.style.opacity = '0';
+            setTimeout(function () {
+                preload.style.display = 'none';
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>
