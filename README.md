@@ -13,6 +13,7 @@ Check it out here: [https://crz02.github.io/Youtube/](https://crz02.github.io/Yo
 ## 📁 Project Structure
 
 Youtube/
+
 ├── index.html
 ├── style.css
 ├── images/
