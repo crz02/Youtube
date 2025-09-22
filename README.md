@@ -49,5 +49,5 @@ Youtube/
 1. Clone this repo:
 
    ```bash
-   git clone https://github.com/yourusername/Youtube.git
+   git clone https://github.com/crz02/Youtube.git
 
