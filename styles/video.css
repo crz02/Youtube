@@ -1,4 +1,4 @@
-/* .thumbnail {
+.thumbnail {
     width: 100%;
     display: block;
 }
@@ -19,8 +19,6 @@
 .channel-picture {
     width: 36px;
     border-radius: 50px;
-    position: relative;
-    display: inline-block;
 }
 
 .thumbnail-row {
@@ -45,37 +43,69 @@
     row-gap: 40px;
 }
 
+.video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 750px) {
+    .search-bar {
+        display: none;
+    }
+
+    .search-button {
+        width: 45px;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .middle-section {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .current-user-icon {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+
 @media (max-width: 600px) {
     .video-grid {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         gap: 10px;
     }
+
     .channel-picture {
-    width: 36px;
-    border-radius: 50px;
-    position: relative;
-    display: inline-block;
-    margin-left: 8px;
-    margin-right: 5px;
-    margin-top: 10px;
+        width: 36px;
+        border-radius: 50px;
+        margin: 0 5px;
     }
-    .video-info{
-        margin-top: 10px;
-    }
-    .video-title{
+
+    .video-title {
         font-size: 16px;
     }
-    .video-author{
+
+    .video-author {
         font-size: 14px;
     }
-    .video-stats{
+
+    .video-stats {
         font-size: 11px;
     }
 }
 
 @media (min-width: 751px) and (max-width:999px) {
     .video-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -85,19 +115,14 @@
     }
 }
 
-.video-time {
-    font-size: 12px;
-    font-weight: 500;
-    padding:4px;
-    background-color: black;
-    color: white;
-    position: absolute;
-    bottom: 8px;
-    right: 5px;
-}
-
 @media (max-width:500px) {
     .sidebar {
-        display: none !important;
+        display: none;
     }
-} */
+    
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+

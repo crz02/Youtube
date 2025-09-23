@@ -1,4 +1,4 @@
-/* .end {
+.end {
     height: 25px;
     position: fixed;
     display: flex;
@@ -14,4 +14,4 @@
     font-size: small;
     background: #fff;
     z-index: 1000;
-} */
+}
