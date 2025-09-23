@@ -1,6 +1,6 @@
 # YouTube-Clone 🎥
 
-This is a simple **YouTube homepage clone** built using HTML and CSS. It mimics the layout and design of the original YouTube homepage for learning and educational purposes.[This Code is Broken Down Due to HTML4 and in HTML Scripts **ITS CONTAINS Sooo many bugs**]
+This is a simple **YouTube homepage clone** built using HTML and CSS. It mimics the layout and design of the original YouTube homepage for learning and educational purposes. Bug Fixes are in the way 
 
 ![YouTube Clone Screenshot](ss.jpeg)
 
@@ -13,7 +13,6 @@ Check it out here: [https://crz02.github.io/Youtube/](https://crz02.github.io/Yo
 ## 📁 Project Structure
 
 Youtube/
-
 ├── index.html
 ├── style.css
 ├── images/

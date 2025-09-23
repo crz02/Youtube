@@ -48,66 +48,8 @@
             }
         }
 
-        /* Dark mode styles using system preference */
+        /* Dark mode styles */
         @media (prefers-color-scheme: dark) {
-            /* Light mode: use dark SVG icons */
-            @media (prefers-color-scheme: light) {
-
-                /* Header icons */
-                .hamburger-menu {
-                    content: url('icons/Dark-Icon/dark-hamburger-menu.svg');
-                }
-
-                .youtube-logo {
-                    content: url('icons/Dark-Icon/dark-youtube-logo.svg');
-                }
-
-                .search-icon {
-                    content: url('icons/Dark-Icon/dark-search.svg');
-                }
-
-                .voice-search-icon {
-                    content: url('icons/Dark-Icon/dark-voice-search-icon.svg');
-                }
-
-                .upload-icon {
-                    content: url('icons/Dark-Icon/dark-upload.svg');
-                }
-
-                .youtube-apps-icon {
-                    content: url('icons/Dark-Icon/dark-youtube-apps.svg');
-                }
-
-                .notifications-icon {
-                    content: url('icons/Dark-Icon/dark-notifications.svg');
-                }
-
-                /* Sidebar icons */
-                .sidebar-link img[alt="Home"] {
-                    content: url('icons/Dark-Icon/dark-home.svg');
-                }
-
-                .sidebar-link img[alt="Explore"] {
-                    content: url('icons/Dark-Icon/dark-explore.svg');
-                }
-
-                .sidebar-link img[alt="Subscriptions"] {
-                    content: url('icons/Dark-Icon/dark-subscriptions.svg');
-                }
-
-                .sidebar-link img[alt="Originals"] {
-                    content: url('icons/Dark-Icon/dark-originals.svg');
-                }
-
-                .sidebar-link img[alt="Youtube music"] {
-                    content: url('icons/Dark-Icon/dark-youtube-music.svg');
-                }
-
-                .sidebar-link img[alt="Library"] {
-                    content: url('icons/Dark-Icon/dark-library.svg');
-                }
-            }
-
             body {
                 background-color: #000000 !important;
                 color: #e0e0e0 !important;
@@ -129,7 +71,7 @@
             }
 
             .header {
-                border-bottom-color: #000000 !important;
+                border-bottom-color: #333 !important;
             }
 
             .preload-overlay {
@@ -139,14 +81,126 @@
             .search-bar,
             .search-button,
             .search-voice-button {
-                background-color: #000000 !important;
+                background-color: #333 !important;
                 color: #e0e0e0 !important;
-                border-color: #000000 !important;
+                border-color: #444 !important;
             }
 
             .tooltip {
                 background-color: #333 !important;
                 color: #e0e0e0 !important;
+            }
+
+            /* Use LIGHT icons in DARK mode */
+            .hamburger-menu {
+                content: url('icons/Light-Icon/light-hamburgermenu.svg');
+            }
+
+            .youtube-logo {
+                content: url('icons/Light-Icon/light-youtube.png');
+            }
+
+            .search-icon {
+                content: url('icons/Light-Icon/light-search-menu.png');
+            }
+
+            .voice-search-icon {
+                content: url('icons/Light-Icon/light-voice-search-icon.png');
+            }
+
+            .upload-icon {
+                content: url('icons/Light-Icon/light-upload.png');
+            }
+
+            .youtube-apps-icon {
+                content: url('icons/Light-Icon/light-youtube-apps.png');
+            }
+
+            .notifications-icon {
+                content: url('icons/Light-Icon/light-notification.png');
+            }
+
+            /* Sidebar icons - Use LIGHT icons in DARK mode */
+            .sidebar-link img[src*="light-home.png"] {
+                content: url('icons/Light-Icon/light-home.png');
+            }
+
+            .sidebar-link img[src*="light-explore.png"] {
+                content: url('icons/Light-Icon/light-explore.png');
+            }
+
+            .sidebar-link img[src*="light-subscprition.png"] {
+                content: url('icons/Light-Icon/light-subscprition.png');
+            }
+
+            .sidebar-link img[src*="light-originals.png"] {
+                content: url('icons/Light-Icon/light-originals.png');
+            }
+
+            .sidebar-link img[src*="light-youtube-music.png"] {
+                content: url('icons/Light-Icon/light-youtube-music.png');
+            }
+
+            .sidebar-link img[src*="light-Library.png"] {
+                content: url('icons/Light-Icon/light-Library.png');
+            }
+        }
+
+        /* Light mode styles - Use DARK icons in LIGHT mode */
+        @media (prefers-color-scheme: light) {
+
+            /* Use DARK icons in LIGHT mode */
+            .hamburger-menu {
+                content: url('icons/Dark-Icon/dark-hamburger-menu.svg');
+            }
+
+            .youtube-logo {
+                content: url('icons/Dark-Icon/dark-youtube-logo.svg');
+            }
+
+            .search-icon {
+                content: url('icons/Dark-Icon/dark-search.svg');
+            }
+
+            .voice-search-icon {
+                content: url('icons/Dark-Icon/dark-voice-search-icon.svg');
+            }
+
+            .upload-icon {
+                content: url('icons/Dark-Icon/dark-upload.svg');
+            }
+
+            .youtube-apps-icon {
+                content: url('icons/Dark-Icon/dark-youtube-apps.svg');
+            }
+
+            .notifications-icon {
+                content: url('icons/Dark-Icon/dark-notifications.svg');
+            }
+
+            /* Sidebar icons - Use DARK icons in LIGHT mode */
+            .sidebar-link img[src*="light-home.png"] {
+                content: url('icons/Dark-Icon/dark-home.svg');
+            }
+
+            .sidebar-link img[src*="light-explore.png"] {
+                content: url('icons/Dark-Icon/dark-explore.svg');
+            }
+
+            .sidebar-link img[src*="light-subscprition.png"] {
+                content: url('icons/Dark-Icon/dark-subscriptions.svg');
+            }
+
+            .sidebar-link img[src*="light-originals.png"] {
+                content: url('icons/Dark-Icon/dark-originals.svg');
+            }
+
+            .sidebar-link img[src*="light-youtube-music.png"] {
+                content: url('icons/Dark-Icon/dark-youtube-music.svg');
+            }
+
+            .sidebar-link img[src*="light-Library.png"] {
+                content: url('icons/Dark-Icon/dark-library.svg');
             }
         }
     </style>
