@@ -54,29 +54,7 @@
     right: 5px;
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 750px) {
-    .search-bar {
-        display: none;
-    }
 
-    .search-button {
-        width: 45px;
-        border: none;
-        border-radius: 50px;
-    }
-
-    .middle-section {
-        margin-left: 20px;
-        margin-right: 10px;
-    }
-
-    .current-user-icon {
-        height: 30px;
-        width: 30px;
-        margin-right: 10px;
-    }
-}
 
 @media (max-width: 600px) {
     .video-grid {
@@ -115,14 +93,5 @@
     }
 }
 
-@media (max-width:500px) {
-    .sidebar {
-        display: none;
-    }
-    
-    body {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
+
 

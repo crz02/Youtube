@@ -142,3 +142,42 @@
     border-radius: 18px;
     margin-right: 20px;
 }
+
+@media (max-width: 750px) {
+    .search-bar {
+        display: none;
+    }
+
+    .search-button {
+        width: 45px;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .middle-section {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .current-user-icon {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hamburger-menu{
+        display: none;
+    }
+    .left-section{
+        padding-left: 4vw;
+    }
+    .right-section{
+        display: none;
+
+    }
+    .middle-section{
+        padding-left: 40vw;
+    }
+}
