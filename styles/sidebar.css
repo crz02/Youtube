@@ -19,9 +19,6 @@
         cursor: pointer;
     }
 
-    .sidebar-link:hover {
-        background-color: rgb(235, 235, 235);
-    }
 
     .sidebar-link img {
         height: 24px;
@@ -55,11 +52,6 @@
         margin-left: 10px;
     }
 
-    .sidebar-link:hover {
-        background-color: rgb(235, 235, 235);
-        border-radius: 8px;
-    }
-
     .sidebar-link img {
         height: 30px;
         margin: 0 13px 4px 13px;
@@ -70,13 +62,31 @@
         margin-left: 20px;
     }
 }
+
 @media (max-width:500px) {
     .sidebar {
         display: none;
     }
-    
+
     body {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+/* Sidebar hover effects for dark and light mode */
+@media (prefers-color-scheme: dark) {
+    .sidebar-link:hover {
+        background-color: #222 !important;
+        color: #fff !important;
+        border-radius: 8px;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .sidebar-link:hover {
+        background-color: #e3e3e3 !important;
+        color: #111 !important;
+        border-radius: 8px;
     }
 }
